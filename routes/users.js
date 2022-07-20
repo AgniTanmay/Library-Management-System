@@ -7,10 +7,10 @@ const express = require("express"),
 const userController = require('../controllers/user');
 
 // user -> dashboard
-router.get("/user/:page", middleware.isLoggedIn, userController.getUserDashboard);
+router.get("/user/:pages", middleware.isLoggedIn, userController.getUserDashboard);
 
 // user -> profile
-router.get("/user/:page/profile", middleware.isLoggedIn, userController.getUserProfile);
+router.get("/user/:pages/profile", middleware.isLoggedIn, userController.getUserProfile);
 
 //user -> upload image
 router.post("/user/1/image", middleware.isLoggedIn, userController.postUploadUserImage);
