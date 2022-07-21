@@ -2,7 +2,7 @@
 
 </head>
 
-<body>
+<body style="background:linear-gradient(90deg,#776fff,#6cdadd,#00d4ff);">
 
 <!--NAVIGATION BAR FOR USER-->
 <%- include ('../partials/userNav.html') %>
@@ -63,7 +63,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <img src="/images/<%=currentUser.image || "profile.png"%>" class="card-img-top rounded-circle">
+        <img src="/images/<%=currentUser.image || "profile.jpeg"%>" class="card-img-top rounded-circle">
         <a href="" class="text-muted ml-5" data-toggle="modal" data-target="#changePhotoModal"
           ><i class="fa fa-camera"></i> Change Photo</a
         >
